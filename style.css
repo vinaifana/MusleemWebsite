@@ -1,0 +1,669 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Patrick+Hand&family=Young+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Epilogue", sans-serif;
+}
+body {
+  background: #fff5e4;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: #00528c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100%;
+}
+.logo {
+  cursor: default;
+}
+#menu_icon {
+  font-size: 3.6rem;
+  color: #ffff;
+  display: none;
+}
+.navbar a {
+  font-size: 2.3rem;
+  color: #ffff;
+  margin-left: 4rem;
+}
+.navbar a:hover {
+  color: #fceed5;
+  text-decoration: underline;
+}
+.heading {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 6rem;
+  font-family: "Young Serif", sans-serif;
+  color: #b79659;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.home .banner_home {
+  margin-top: 19rem;
+  margin-right: 6rem;
+}
+#home_content h2 {
+  color: #002a48;
+  font-family: "Young Serif", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px;
+  text-transform: capitalize;
+}
+#home_content h3 {
+  color: #002a48;
+  margin-top: 1rem;
+  font-family: "Young Serif", sans-serif;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#home_content p {
+  margin-top: 3rem;
+  color: var(--neutral-color-80, #242b33);
+  font-family: "Epilogue", sans-serif;
+  line-break: auto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+#home_content {
+  margin-top: 12rem;
+  margin-left: 18rem;
+}
+
+/* List Surat */
+.surat_div {
+  width: 50rem;
+  margin: auto auto 40px auto;
+  border-radius: 2rem;
+  padding: 18px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #003459;
+  box-shadow: 0 7px 17px #0034596d;
+  transition: 0.5s ease;
+}
+.surat_div:hover {
+  transform: scale(1.08);
+}
+
+.result_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 7rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.nama_surat {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #fceed5;
+  font-size: 3rem;
+  line-height: 21px;
+  font-weight: 500;
+}
+.asma_surat {
+  align-items: center;
+  text-align: center;
+  color: #fceed5;
+  margin-top: 3rem;
+  font-size: 4rem;
+  line-height: 21px;
+  font-weight: 500;
+}
+.type_surat {
+  color: #fceed5;
+  margin-top: 3rem;
+  font-size: 2.3rem;
+  line-height: 21px;
+  font-weight: 400;
+}
+.arti_surat {
+  color: #fceed5;
+  margin-top: 2rem;
+  font-size: 2rem;
+  line-height: 21px;
+  font-weight: 400;
+}
+.banner_surat {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+/* Asmaul Husna */
+.asmaul_div {
+  width: 50rem;
+  margin: auto auto 40px auto;
+  border-radius: 2rem;
+  padding: 18px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #003459;
+  box-shadow: 0 7px 17px #0034596d;
+  transition: 0.5s ease;
+}
+.asmaul_div:hover {
+  transform: scale(1.08);
+}
+.resultAsmaul_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 7rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.nama_asmaul {
+  font-family: "Epilogue", sans-serif;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  line-height: 25px;
+  color: #fceed5;
+  margin-top: 3rem;
+  font-size: 6rem;
+  line-height: 21px;
+  font-weight: 500;
+}
+.latin_asmaul {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 2rem;
+  color: #fceed5;
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  line-height: 21px;
+  font-weight: 500;
+}
+.arti_asmaul {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #fceed5;
+  margin-top: 2rem;
+  font-size: 2rem;
+  line-height: 21px;
+  font-weight: 400;
+}
+.banner_asmaul {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+/* Jadwal Shalat */
+.banner_jadwalsholat {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.container {
+  margin: 75px;
+}
+.card_header {
+  width: 85%;
+  margin-top: 4rem;
+  display: flex;
+  border-radius: 40px;
+  background-color: #0078cd;
+  color: #fceed5;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 14rem;
+}
+.card_header p {
+  font-size: 1.7rem;
+}
+.space {
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+.table_primary th {
+  background-color: #eec77e;
+  color: #ffff;
+  font-size: 1.5rem;
+}
+.table_primary {
+  height: 7rem;
+}
+.card {
+  border-radius: 40px;
+  box-shadow: 0 2px 4px (0, 0, 0.1);
+}
+.table {
+  margin-top: -3rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  text-align: center;
+  padding: 14px;
+  font-size: 1.5rem;
+  border-radius: 40px 40px 0 0;
+}
+.table_primary td {
+  font-weight: 700;
+  border-radius: 0;
+  transition: 0.5s ease;
+}
+.table_primary:hover {
+  color: #ffff;
+  background-color: #b79659;
+  
+}
+#list_jadwal {
+  box-shadow: 0 7px 17px #d1c5b0;
+  color: #003459;
+  font-weight: 420;
+  border-radius: 0 0 40px 40px;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+  .home .banner_home {
+    width: 45vw;
+  }
+  .home {
+    margin-top: 6rem;
+  }
+  #home_content {
+    margin-left: 15rem;
+  }
+  #home_content h2 {
+    font-size: 37px;
+    line-height: 48px;
+  }
+  #home_content h3 {
+    font-size: 34px;
+  }
+  #home_content p {
+    font-size: 17px;
+  }
+  .banner_jadwalsholat {
+    margin-top: 15rem;
+  }
+  .card_header {
+    margin-left: 12rem;
+  }
+  .banner_jadwalsholat img {
+    width: 87%;
+  }
+  .heading {
+    margin-top: 6rem;
+    margin-bottom: -2rem;
+  }
+  .banner_asmaul {
+    margin-top: 15rem;
+  }
+  .banner_asmaul img {
+    width: 87%;
+  }
+  .asmaul_div {
+    width: 45rem;
+    padding: 20px;
+    margin: auto auto 40px auto;
+  }
+  .nama_asmaul {
+    font-size: 4.5rem;
+  }
+  .latin_asmaul {
+    font-size: 2.5rem;
+  }
+  .arti_asmaul {
+    font-size: 1.8rem;
+  }
+  .banner_surat {
+    margin-top: 15rem;
+  }
+  .banner_surat img {
+    width: 87%;
+  }
+  .surat_div {
+    width: 45rem;
+  }
+  .nama_surat {
+    font-size: 2.7rem;
+  }
+}
+@media (max-width: 911px) {
+  .home {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .home .banner_home img {
+    width: 200%;
+  }
+  .home .banner_home {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1rem;
+  }
+  #home_content {
+    margin-left: -6rem;
+  }
+  #home_content h2 {
+    margin-top: 14rem;
+    font-size: 45px;
+    margin-left: 4rem;
+  }
+  #home_content h3 {
+    font-size: 40;
+  }
+  #home_content p {
+    white-space: pre;
+    font-size: 12;
+    margin-top: -0.5rem;
+  }
+  .banner_jadwalsholat {
+    margin-bottom: -1rem;
+  }
+  .heading {
+    margin-bottom: 2rem;
+  }
+  .card_header {
+    margin-left: 9rem;
+  }
+  .card_header p {
+    font-size: 1.8rem;
+    line-height: 21px;
+  }
+  .space strong {
+    font-size: 3rem;
+  }
+  .table th,
+  .table td {
+    font-size: 1.6rem;
+    border-radius: 25px 25px 0 0;
+  }
+  #list_jadwal {
+    border-radius: 0 0 25px 25px;
+  }
+  .banner_asmaul img {
+    width: 90%;
+    margin-left: 0.6rem;
+  }
+  .heading {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem;
+  }
+  .asmaul_div {
+    width: 50rem;
+  }
+  .resultAsmaul_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .result_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .surat_div {
+    width: 50rem;
+  }
+}
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 2rem;
+    margin-left: 3rem;
+  }
+  .banner_jadwalsholat {
+    margin-top: 12rem;
+  }
+  .card_header {
+    width: 95%;
+    margin-left: 2.5rem;
+  }
+  .card_header p {
+    font-size: 1.8rem;
+  }
+  .table th,
+  .table td {
+    font-size: 1.7rem;
+    line-height: 21px;
+  }
+  .table {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3.5rem;
+  }
+  .banner_asmaul {
+    margin-top: 12rem;
+  }
+  .asmaul_div {
+    margin-top: -2rem;
+    width: 45rem;
+  }
+  .banner_surat {
+    margin-top: 12rem;
+  }
+  .surat_div {
+    margin-top: -2rem;
+    width: 45rem;
+  }
+}
+@media (max-width: 617px) {
+  #home_content {
+    margin-left: 6rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #home_content h2 {
+    margin-top: 17rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+  }
+  #home_content p {
+    font-size: 2rem;
+  }
+  .home .banner_home {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .home .banner_home img {
+    width: 250%;
+  }
+  #menu_icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    width: 50%;
+    right: 0;
+    padding: 1rem 3%;
+    background-color: #002a48;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  .navbar a {
+    display: flex;
+    font-size: 2.4rem;
+    margin: 5rem 0;
+  }
+  .banner_jadwalsholat {
+    margin-top: 15rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+  }
+  .banner_jadwalsholat img {
+    width: 110%;
+  }
+  .heading {
+    margin-right: -13rem;
+  }
+  .card_header {
+    margin-left: 7rem;
+    width: 100%;
+  }
+  .card_header p {
+    font-size: 1.8rem;
+  }
+  .space {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+  .table th,
+  .table td {
+    font-size: 1.5rem;
+  }
+  .banner_surat {
+    margin-top: 15rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+  }
+  .banner_surat img {
+    width: 110%;
+  }
+  .surat_div {
+    margin-left: 6.5rem;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .result_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .nama_surat {
+    font-size: 3rem;
+  }
+  .asma_surat {
+    font-size: 5rem;
+  }
+  .type_surat {
+    font-size: 2.5rem;
+  }
+  .arti_surat {
+    font-size: 2.5rem;
+  }
+  .banner_asmaul {
+    margin-top: 15rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+  }
+  .banner_asmaul img {
+    width: 110%;
+  }
+  .asmaul_div {
+    margin-left: 6.5rem;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .resultAsmaul_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .nama_asmaul {
+    font-size: 7rem;
+  }
+  .latin_asmaul {
+    font-size: 3rem;
+  }
+  .arti_asmaul {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 450px) {
+  .home .banner_home img {
+    width: 300%;
+    margin-right: 4rem;
+  }
+  #home_content h2 {
+    margin-top: 27rem;
+    margin-right: -15rem;
+  }
+  #home_content h3 {
+    margin-right: -15rem;
+  }
+  #home_content p {
+    margin-top: 3rem;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    white-space: initial;
+    line-height: 28px;
+    margin-left: 5rem;
+    margin-bottom: 8rem;
+    margin-right: -15rem;
+  }
+  .banner_jadwalsholat img {
+    width: 150%;
+  }
+  .banner_jadwalsholat {
+    margin-right: 11.5rem;
+  }
+  .heading {
+    margin-left: 2rem;
+  }
+  .card_header {
+    margin-left: 2rem;
+    width: 100%;
+    margin-left: 7rem;
+  }
+  .space {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  .card_header p {
+    font-size: 1.5rem;
+  }
+  .table th,
+  .table td {
+    font-size: 1.3rem;
+    padding: 7.5px;
+  }
+  .table_primary td {
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/mainlogo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Jadwal Shalat</title>
+  </head>
+  <body>
+  <header class="header">
+    <a > <img src="images/logo.png" alt="logo"/></a>
+    <i class='bx bx-menu-alt-right' id="menu_icon"></i>
+    <nav class="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="jadwal_shalat.html">Jadwal Shalat</a>
+      <a href="asmaul_husna.html">Asmaul Husna</a>
+      <a href="list_surat.html">List Surat</a>
+    </nav>
+  </header>
+    <section class="jadwal_shalat">
+        <div class="banner_jadwalsholat">
+      <img src="images/banner_jadshol.png" alt="banner" />
+    </div>
+    <h1 class="heading">Jadwal Shalat</h1>
+    <div class="card">
+      <div class="card_header">
+          <p class="city">Kota/Lokasi <strong id="city"></strong></p>
+          <p class="space"><strong>||</strong></p>
+          <p>Provinsi <strong id="prov"></strong></p>
+      </div>
+    <div class="container">
+            <div class="card_body">
+                <div class="table_responsive">
+                    <table class="table">
+                        <thead class="table_primary">
+                            <tr>
+                            <th>Tanggal</th>
+                            <th>Imsak</th>
+                            <th>Subuh</th>
+                            <th>Terbit</th>
+                            <th>Dhuha</th>
+                            <th>Dzuhur</th>
+                            <th>Ashar</th>
+                            <th>Maghrib</th>
+                            <th>Isya</th> 
+                            </tr>
+                        </thead>
+                        <tbody id="list_jadwal">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script src="MyScript.js"></script>
+  </body>
+</html>
